@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.container-bg{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.top{
+    background-color: lime;
+    height: 4rem;
+    width: 100%;
+    text-align: center;
+    text-justify: center;
+}
+
+.menu {
+    background-color: blue;
+    height: 2rem;
+    width: 100%;    
+    text-align: center;
+    text-justify: center;
+}
+
+.conteudo {
+    background-color: aquamarine;
+    height: 100%;
+    width: 100%;   
+}
+
+.footer {
+    background-color: lime;
+    height: 2rem;
+    width: 100%;
+    
+}
+
