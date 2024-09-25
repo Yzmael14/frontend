@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
+:root {
+    --fundo-site: rgb(0, 0, 0);
+    --fundo-site-transparent: rgba(7, 12, 24, 0.25);
+    --fundo-site-bright: rgb(12, 18, 37);
+    --fundo-navbar: rgb(7, 12, 24);
+    --fundo-navbar-bright: rgb(24, 36, 75);
+}
+
+a:link{
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+body {
+    background: linear-gradient(to right, var(--fundo-site-bright), var(--fundo-site) 50%, var(--fundo-site-bright));
+}
+
+.main_site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background: radial-gradient(circle, var(--fundo-navbar), var(--fundo-navbar-bright));
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: larger;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background: var(--fundo-site);
+    align-items: center;
+    width: 45vw;
+    height: 200vh;
+}
+
+.inside_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-wrap: wrap;
+    background: var(--fundo-site);
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.img-folder {
+    display: flex;
+    height: 12rem;
+    width: 92%;
+    margin: auto;
+    text-align: justify;
+    text-wrap: wrap;
+}
+
+.foldersetting {
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem;
+    margin-left: 0;
+    transition: all 0;
+}
+
+.case_text {
+    font-family: "Lora", serif;
+    font-weight: 50;
+}
+
+:foldersetting:hover {
+    transform: scale(1.5);
+}
+
+.inside_content button {
+    border: 2px solid red;
+    background-color: black;
+    color: white;
+    padding: 0.7rem;
+    cursor: pointer;
+    font-family: "Lora", serif;
+    margin-top: 3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.inside_content button:hover {
+    transform: scale(1.1);
+    background-color: var(--fundo-site-bright);
+}
+
+.fixed-footer {
+    display: flex;
+    text-decoration: wavy;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5%;
+    width: 100%;
+    background: radial-gradient(circle, var(--fundo-navbar), var(--fundo-navbar-bright));    
+}
+
+.fixed-footer a:hover {
+    transition: all 0.3s ease-out;
+    color: red;    
+}
+
+.aboutsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 55vh;
+    background: radial-gradient(circle, var(--fundo-navbar), var(--fundo-navbar-bright));
+}
+
+.abouttitle{
+    display: flex;
+    font-size: larger;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-top: 1rem;
+}
+
+.abouttext{
+    display: flex;
+    text-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    overflow: auto;
+    font-size: larger;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+}
